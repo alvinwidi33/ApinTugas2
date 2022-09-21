@@ -76,6 +76,11 @@
     {% endblock content %}
     '''
   - menghubungkan models dengan views dan template
-  - delivery data dengan tipe xml, html, dan json
+  - delivery data dengan tipe xml dan json
   - buat fungsi dengan paramter request yang mengembalikan data dalam bentuk xml dan json
   - kita deploy ke Heroku dan push ke repository github tugas 2
+
+# Screenshot JSON
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/112617994/191602903-8acb09cd-9d71-4db8-8dd9-8d1d93d56aa7.png">
+# Screenshot XML
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/112617994/191603673-0edd44a9-cdb9-457e-bc47-f6e8665c4f07.png">
