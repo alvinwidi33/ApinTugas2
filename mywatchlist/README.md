@@ -81,6 +81,8 @@
   - kita deploy ke Heroku dan push ke repository github tugas 2
 
 # Screenshot JSON
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/112617994/191602903-8acb09cd-9d71-4db8-8dd9-8d1d93d56aa7.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/112617994/191603887-b0d31b87-ab84-4419-ac1b-67fba57680fd.png">
+
 # Screenshot XML
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/112617994/191603673-0edd44a9-cdb9-457e-bc47-f6e8665c4f07.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/112617994/191603835-f3cf6515-5ed3-48fe-b8c7-f1a4b1ad452b.png">
+
