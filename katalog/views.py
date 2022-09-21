@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from katalog.models import CatalogItem
-from django.http import HttpResponse
-from django.core import serializers
+
 
 def show_katalog(request):
     data_katalog = CatalogItem.objects.all()
