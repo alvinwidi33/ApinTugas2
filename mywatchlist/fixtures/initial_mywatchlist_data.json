@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":1,
+        "fields":{
+            "watched":"Yes",
+            "title":"Pengabdi Setan 2 : Communion",
+            "rating": "4.5",
+            "release_date": "4 Agustus 2022",
+            "review":"Filmnya serem."
+        }
+},
+{
+        "model":"mywatchlist.MyWatchList",
+        "pk":2,
+        "fields":{
+            "watched":"No",
+            "title":"KKN Di Desa Penari",
+            "rating": "4.6",
+            "release_date": "30 April 2022",
+            "review":"Katanya alur ceritanya menarik"
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":3,
+        "fields":{
+            "watched":"Yes",
+            "title":"Dr Strange Multiverse of Madness",
+            "rating": "3.9",
+            "release_date": "5 Mei 2022",
+            "review":"Mantap ceritanya."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":4,
+        "fields":{
+            "watched":"No",
+            "title":"Thor : Love and Thunder",
+            "rating": "3.7",
+            "release_date": "6 Juli 2022",
+            "review":"Agak lawak ya ceritanya."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":5,
+        "fields":{
+            "watched":"Yes",
+            "title":"Elizabeth",
+            "rating": "3.8",
+            "release_date": "23 Oktober 1998",
+            "review":"I love dark ages."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":6,
+        "fields":{
+            "watched":"No",
+            "title":"Geostorm",
+            "rating": "3.2",
+            "release_date": "13 Oktober 2017",
+            "review":"Kayak mau kiamat ya filmnya."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":7,
+        "fields":{
+            "watched":"Yes",
+            "title":"Cinderella",
+            "rating": "4.1",
+            "release_date": "11 Maret 2015",
+            "review":"Love Disney Princess."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":8,
+        "fields":{
+            "watched":"Yes",
+            "title":"Insidious : Chapter 2",
+            "rating": "4.3",
+            "release_date": "27 September 2013",
+            "review":"Agak psycho sih."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":9,
+        "fields":{
+            "watched":"Yes",
+            "title":"Midsommar",
+            "rating": "3.3",
+            "release_date": "7 September 2019",
+            "review":"Distrubing mental banget dah."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":10,
+        "fields":{
+            "watched":"No",
+            "title":"Sound of Music",
+            "rating": "4.5",
+            "release_date": "2 Maret 1965",
+            "review":"Suka musikal."
+        }
+    }
+]
