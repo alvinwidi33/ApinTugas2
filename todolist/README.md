@@ -1,4 +1,4 @@
-## Link menuju Heroku :
+## Link menuju Heroku : https://tugas2-pbp-apin.herokuapp.com/todolist/
 ## Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 CRSF sendiri merupakan kepanjangan dari Cross Site Request Forgery yang berguna untuk melindungi website dari serangan luar. CRSF sendiri merupakan bawaan dari django. Selain itu CRSF berguna untuk memastikan bahwa user yang melakukan login adalah user itu sendiri, maka dari itu CRSF memiliki token yang bersifat unik untuk setiap user
 ## Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }})? Jelaskan secara gambaran besar bagaimana cara membuat <form> secara manual.
@@ -126,3 +126,6 @@ def hapus(request,pk):
 7. Kita routing pada todolist yang ada pada urls.py
 8. Kita push dan deploy ke github, heroku
 9. Buat dua akun user dan tiga dummy data
+<img width="876" alt="image" src="https://user-images.githubusercontent.com/112617994/192939023-149686b6-164a-4290-a7c9-a1802af2929f.png">
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/112617994/192939097-c30067e7-1ef7-4320-8f0a-bc84a321c21c.png">
+
