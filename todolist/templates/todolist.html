@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Task</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>Todo</th>
+  </tr>
+  {% for task in list %}
+  <tr>
+      <th>{{task.date}}</th>
+      <th>{{task.title}}</th>
+      <th>{{task.description}}</th>
+      {% if task.is_finished  %}
+        <th><a href="update/{{task.pk}}">Selesai</a></th>
+      {% else %}
+        <th><a href="update/{{task.pk}}">Belum Selesai</a></th>
+      {% endif %}
+      <th><a href="hapus/{{task.pk}}">Hapus</a></th>
+  </tr>
+{% endfor %}
+</table>
+<button><a href="{% url 'todolist:create-task' %}">Tambah</a></button>
+<button><a href="{% url 'todolist:logout_user' %}">Logout</a></button>
+{% endblock content %}

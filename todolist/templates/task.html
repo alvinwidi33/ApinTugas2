@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Create Task</title>
+{% endblock meta %}
+
+{% block content %}
+
+<h1>Tambah Tugasmu</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <label for="title">Title</label>
+    <input type="text" name="title" placeholder="Nama Tugas">
+    
+    <label for="description">Description</label>
+    <input type="text" name="description" placeholder="Berikan deskripsimu">
+
+    <button id = "button" type="submit">Tambah</button>
+</form>
+
+{% endblock content %}
