@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-<title>Login</title>
+<title style="text-align:center;">Login</title>
 {% endblock meta %}
 
 {% block content %}
@@ -20,7 +20,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
-<div class = "login">
+<div class="position-absolute top-50 end-50 start-50 translate-middle container-lg mb-3 bg-primary p-2 text-dark bg-opacity-10 border border-primary">
     <h1>Login</h1>
 
     <form method="POST" action="">
@@ -30,7 +30,6 @@
                 <td>Username: </td>
                 <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
             </tr>
-                    
             <tr>
                 <td>Password: </td>
                 <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
@@ -51,7 +50,7 @@
         </ul>
     {% endif %}     
         
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+    <p style="text-align:center">Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a></p>
 
 </div>
 

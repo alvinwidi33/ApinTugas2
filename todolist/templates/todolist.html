@@ -1,37 +1,39 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <h1 style="text-align:center">Todolist</h1>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
 </html>
-<table>
-  <tr>
-    <th>Date</th>
-    <th>Task</th>
-    <th>Description</th>
-    <th>Status</th>
-    <th>Todo</th>
-  </tr>
+<div class="container-fluid p-3">
+<div class="row row-cols-1 row-cols-md-4 g-4">
   {% for task in list %}
   <tr>
-      <th>{{task.date}}</th>
-      <th>{{task.title}}</th>
-      <th>{{task.description}}</th>
-      {% if task.is_finished  %}
-        <th><a href="update/{{task.pk}}">Selesai</a></th>
-      {% else %}
-        <th><a href="update/{{task.pk}}">Belum Selesai</a></th>
-      {% endif %}
-      <th><a href="hapus/{{task.pk}}">Hapus</a></th>
+      <div class="col">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h4 class="card-title">{{task.title}}</h4>
+          <h5 class="card-subtitle mb-2 text-muted">{{task.date}}</h5>
+          <p class="card-text">{{task.description}}</p>
+          {% if task.is_finished  %}
+          <a href="update/{{task.pk}}" class="card-link">Selesai</a>
+          {% else %}
+          <a href="update/{{task.pk}}" class="card-link">Belum Selesai</a>
+          {% endif %}
+          <a href="hapus/{{task.pk}}" class="card-link">Hapus</a>
+        </div>
+      </div>
+    </div>
   </tr>
 {% endfor %}
-</table>
+</div>
+</div>
 <button type="button" class="btn btn-info"><a style="text-decoration:none;color:aliceblue" href="{% url 'todolist:create-task' %}">Tambah</a></button>
 <button type="button" class="btn btn-danger"><a style="text-decoration:none;color:aliceblue" href="{% url 'todolist:logout_user' %}">Logout</a></button>
 {% endblock content %}
