@@ -1,4 +1,4 @@
-## LINK HEROKUAPP : 
+## LINK HEROKUAPP : https://tugas2-pbp-apin.herokuapp.com/todolist/
 1. Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
 Internal CSS biasanya dituliskan dalam bentuk tag. Internal CSS hanya bisa digunakan untuk satu halaman web saja dan tidak bisa digunakan untuk halaman lainnya. 
 Kelebihannya sebagai berikut :
@@ -24,21 +24,21 @@ Kekurangannya sebagai berikut :
 - Hanya bisa diterapkan pada satu elemen
 
 2. Jelaskan tag HTML5 yang kamu ketahui.
-- <html> --> untuk menentukan dokumen HTML
-- <h1> to <h6> --> untuk membuat heading
-- <title> --> membuat judul dari sebuah halaman
-- <body> --> membuat tubuh dari suatu halaman
-- <button> --> untuk membuat tombol yang bisa ditekan
+- html --> untuk menentukan dokumen HTML
+- h1 to h6 --> untuk membuat heading
+- title --> membuat judul dari sebuah halaman
+- body --> membuat tubuh dari suatu halaman
+- button --> untuk membuat tombol yang bisa ditekan
 
 3. Jelaskan tipe-tipe CSS selector yang kamu ketahui.
-- <p>
+- p
 ``` 
     p {
     color: blue;
 }
 ```
 itu berarti semua elemen <p> akan berubah warna menjadi biru
-- <.> 
+- . 
 ```
 .pink {
   color: white;
@@ -47,7 +47,7 @@ itu berarti semua elemen <p> akan berubah warna menjadi biru
 }
 ```
 memilih elemen berdasarkan nama class
-- <#>
+- #
 ```
 #header {
     background: teal;
