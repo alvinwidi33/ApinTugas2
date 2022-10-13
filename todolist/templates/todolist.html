@@ -10,42 +10,6 @@
     <h1 style="text-align:center">Todolist</h1>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-
-  function addTodolist() {
-    fetch("{% url 'todolist:add_todolist' %}", {
-          method: "POST",
-          body: new FormData(document.querySelector('#form'))
-      })
-    return false
-  }
-
-  document.getElementById("button").onclick=addTodolist()
-  $(document).ready(function(){
-    $.get("/todolist/json", function(data) {
-     for (i=0;i<data.length;i++){
-        $("#container").append(`
-      <div class="col">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h4 class="card-title">${data[i].fields.title}</h4>
-          <h5 class="card-subtitle mb-2 text-muted">${data[i].fields.date}</h5>
-          <p class="card-text">${data[i].fields.description}</p>
-          {% if task.is_finished  %}
-          <a href="update/${data[i].pk}}" class="card-link">Selesai</a>
-          {% else %}
-          <a href="update/${data[i].pk}" class="card-link">Belum Selesai</a>
-          {% endif %}
-          <a href="hapus/${data[i].pk}" class="card-link">Hapus</a>
-        </div>
-      </div>
-    </div>`)
-      }
-    });
-  })
-  
-</script> -->
   </head>
 </html>
 
