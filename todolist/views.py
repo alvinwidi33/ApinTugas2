@@ -5,15 +5,16 @@ from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
+from django.core import serializers
 # Create your views here.
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
     user = request.user
-    todo = Task.objects.filter(user=user) 
+    # todo = Task.objects.filter(user=user) 
     context = {
-    'list': todo,
+    #'list': todo,
     'nama': user,
     'last_login': request.COOKIES,  
 }
@@ -77,9 +78,32 @@ def update(request,pk):
     task.save()
     return HttpResponseRedirect(reverse("todolist:show_todolist"))
     
-
 @login_required(login_url='/todolist/login/')
 def hapus(request,pk):
     task = Task.objects.filter(user=request.user).get(pk=pk)
     task.delete()
     return HttpResponseRedirect(reverse("todolist:show_todolist"))
+
+def show_json(request):
+    task = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", task), content_type="application/json")
+
+def add_todolist(request):
+    if request.method == 'POST':
+        title = request.POST.get("title")
+        description = request.POST.get("description")
+
+        new_barang = Task.objects.create(user=request.user, is_finished=False, title = title, description=description,date=datetime.datetime.now())
+        new_barang.save()
+        return HttpResponse(b"CREATED")
+
+    return HttpResponseNotFound()
+        # hasil = {
+        #     'fields':{
+        #         'title':new_barang.title,
+        #         'description':new_barang.description,
+        #         'date':new_barang.date,
+        #     },
+        #     'pk':new_barang.pk
+        # }
+        # return JsonResponse(hasil)
